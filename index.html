@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Keyframe animation for nav links */
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      /* Burger animation */
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .toggle .line2 {
+        opacity: 0;
+      }
+
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#certification">Certification</a></li> -->
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="profile-pic-container">
+            <img
+              src="/personal_portfolio/src/IMG-20230101-WA0037.jpg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+          </div>
+          <h1>Welcome! I'm Akanji Anthony Abidemi</h1>
+          <p>
+            An aspiring medical professional studying Anatomy, a skilled React
+            developer, and a passionate frontend specialist dedicated to
+            creating beautiful, functional web experiences.
+          </p>
+          <a href="#about" class="btn">Learn More</a>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          I'm Akanji Anthony Abidemi, a 400L Anatomy student at the University
+          of Ilorin with a parallel passion for frontend development. My journey
+          in tech began with a curiosity for building interactive web
+          experiences, which evolved into expertise in React.js and modern
+          frontend development. I thrive on solving problems at the intersection
+          of medicine and technology, believing that bridging these fields can
+          revolutionize healthcare solutions.
+        </p>
+
+        <p>
+          As a developer, I specialize in crafting responsive, user-friendly
+          interfaces with React, and I'm continuously expanding my
+          skills—currently eyeing mastery of the MERN stack and Next.js for
+          full-stack capabilities. In my medical studies, I focus on anatomical
+          research and data-driven approaches, always looking for ways to
+          integrate tech for better diagnostics or medical education tools.
+        </p>
+
+        <p>
+          Beyond academics and coding, I enjoy contributing to open-source
+          projects, writing tech articles, and exploring AI's role in
+          healthcare. These pursuits keep me innovative and connected to both
+          fields. My long-term vision is to develop software solutions that
+          address gaps in medical education or patient care, leveraging my dual
+          expertise.
+        </p>
+
+        <p>
+          Fun fact: I approach coding like anatomy—breaking down complex systems
+          into smaller, logical components to understand (and build) them
+          better. Whether it’s a UI component or a physiological process, the
+          joy lies in mastering the details.
+        </p>
+      </section>
+
+      <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>Bachelor of Science (B.Sc) in Anatomy</h3>
+          <p>University of Ilorin (Unilorin), 2020 – 2025 (Expected)</p>
+          <p>
+            Relevant coursework: Neuroanatomy, Histology, Medical Imaging |
+            Research focus: Data-driven approaches in anatomical studies.
+            Bridging medical theory with tech applications through independent
+            projects.
+          </p>
+        </div>
+
+        <div class="education-item">
+          <h3>Frontend Development & React.js Specialization</h3>
+          <p>
+            Self-Taught & Online Certifications (Meta, Udemy, FreeCodeCamp),
+            2021 – Present
+          </p>
+          <p>
+            Key skills: React.js, JavaScript (ES6+), Responsive Design, Git |
+            Currently upskilling: Next.js, Node.js (MERN stack). Built 10+
+            projects, including healthcare-themed web apps to merge medical and
+            tech domains.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Leadership Trainee</h3>
+          <p>U-Inspire Leadership Program | 2023</p>
+          <ul>
+            <li>
+              Mastered core leadership principles including empathetic
+              communication, active listening, and team motivation strategies
+              through immersive workshops.
+            </li>
+            <li>
+              Applied learned skills to mediate a student group conflict,
+              resulting in improved collaboration on a departmental project.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h3>Anatomy Research Project Lead</h3>
+          <p>University of Ilorin | 2024</p>
+          <ul>
+            <li>
+              Designed and executed a study analyzing the correlation between
+              anthropometric measures and physical performance in 100+ Unilorin
+              athletes.
+            </li>
+            <li>
+              Utilized statistical tools (SPSS/Excel) for data analysis,
+              uncovering key insights about body composition's impact on
+              athletic ability.
+            </li>
+            <li>
+              Presented findings to faculty, proposing data-driven training
+              recommendations for sports teams.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section id="certification" class="certification-section">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+          <h3>[Certification Name]</h3>
+          <p>[Issuing Body] | [Date Issued]</p>
+        </div>
+        <div class="certification-item">
+          <h3>[Another Certification Name]</h3>
+          <p>[Issuing Body] | [Date Issued]</p>
+        </div>
+      </section> -->
+
+      <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar html" style="width: 90%"></div>
+            </div>
+            <div class="skill-percentage">90%</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar css" style="width: 85%"></div>
+            </div>
+            <div class="skill-percentage">85%</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar js" style="width: 70%"></div>
+            </div>
+            <div class="skill-percentage">70%</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">React</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar react" style="width: 85%"></div>
+            </div>
+            <div class="skill-percentage">85%</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">Photoshop</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar photoshop" style="width: 55%"></div>
+            </div>
+            <div class="skill-percentage">55%</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">Microsoft Office</div>
+            <div class="skill-bar-container">
+              <div class="skill-bar msoffice" style="width: 90%"></div>
+            </div>
+            <div class="skill-percentage">90%</div>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem">
+          This section highlights my core competencies and the tools I
+          frequently use to bring ideas to life.
+        </p>
+      </section>
+
+      <section id="services" class="services-section">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>Frontend Development</h3>
+            <p>
+              Building responsive, high-performance web applications with
+              React.js, JavaScript, and modern frameworks. From sleek portfolios
+              to interactive dashboards, I turn ideas into functional
+              experiences.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>UI/UX Design</h3>
+            <p>
+              Crafting intuitive interfaces with user-centered design
+              principles. I focus on accessibility, clean aesthetics, and
+              seamless workflows—whether for websites or healthcare apps.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Medical-Tech Solutions</h3>
+            <p>
+              Bridging anatomy and technology through custom tools: educational
+              platforms, data visualizations, or prototype apps for healthcare
+              workflows. Ideal for clinics, researchers, or med-ed startups.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="portfolio-section">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <h3>Styla Outfit - Fullstack E-Commerce Platform</h3>
+            <p>
+              <strong>Technologies Used:</strong> React.js, Node.js, Express,
+              MongoDB (MERN Stack), JavaScript, CSS
+            </p>
+            <p>
+              <strong>Description:</strong> Developed a complete e-commerce
+              solution featuring product listings, user authentication, cart
+              functionality, and responsive design. Implemented secure checkout
+              processes and admin dashboard for inventory management,
+              demonstrating full-stack capabilities.
+            </p>
+            <p class="note">*Codebase private per client agreement</p>
+            <a href="https://stylaroutfit.com" class="btn" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem">
+          These projects demonstrate my ability to apply my skills to real-world
+          challenges and deliver effective solutions.
+        </p>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Email: developerguselt@gmail.com</p>
+        <p>
+          GitHub:
+          <a href="https://github.com/guseltony" target="_blank">My Github</a>
+        </p>
+        <p>
+          Feel free to reach out to discuss potential collaborations or
+          opportunities!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dev_Guseltony. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
